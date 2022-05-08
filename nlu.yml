@@ -1,0 +1,263 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - interested
+    - i am interested
+    - please provide me
+    - i can apply for the same.
+    - ya
+    - i like it 
+    - likes
+    - yes that would be fine.
+    - right 
+    - correct
+    - agree
+    - totally agree
+    - precisely yes
+    - true
+    - truly
+    - exactly 
+    - right i am looking for it
+    - start
+    - lets go for it
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - i am not interested
+    - not interested
+    - nope
+    - i dont like it.
+    - i hate it
+    - stop calling me.
+    - don't call me.
+    
+- intent: complain
+  examples: |
+    - i want to raise complain
+    - food was not good
+    - it was junk food
+    - register complain
+    - need to talk to manager
+    - call manager i want to talk to him. 
+    - raise complain
+    - i need to raise issue
+    - service is really bad
+    - service is delayed a lot
+    - waiter come after so many calls
+    - manager is rude
+
+- intent: cancel_booking
+  examples: |
+    - i want to cancel my booking. 
+    - we are not coming. 
+    - our plan has changed please cancel booking.
+
+- intent: booking
+  examples: |
+    - book a table. 
+    - reserve table
+    - required table booking.
+    - planning to do some party.
+    - requied booking for the party. 
+    - required reservation.
+    - need to book a table.
+    - need a table booking. 
+    - table reservation required. 
+    - required reservation.
+
+- intent: booking_with_count
+  examples: |
+    - i want to book table for 11 people.
+    - i want to book table for four people.
+    - i need reservation for 2. 
+    - 10 persons booking required. 
+    - book for 10 persons.
+    - can you please do booking for 10?
+    - need reservation for 10.
+    - table for 2
+    - book a table for 2 persons. 
+    - reserve for 2 persons. 
+    - table 2
+
+- intent: order_pizza
+  examples: |
+    - i want order [one](pizza_quantity) [extra cheese](pizza_topping) [margarita pizza](pizza_name)
+    - i want order [one](pizza_quantity) [margarita](pizza_name) with [extra cheese](pizza_topping)
+    - i want order [two](pizza_quantity) [veg extra vegenza](pizza_name)
+    - i want order [2](pizza_quantity) [Peppy Paneer](pizza_name)
+    - order [2](pizza_quantity) [Farm House](pizza_name)
+
+- intent: booking_with_count_time
+  examples: |
+    - please book a table for five people tomorrow after noon.
+    - please reserve table for today evening.
+    - reserve table for 10 persons today evening. 
+    - book a table for 5 people tomorrow morning. 
+
+- intent: booking_time_day
+  examples: |
+    - today at noon
+    - today evening
+    - today morning
+    - tomorrow morning 
+    - tomorrow evening
+    - tomorrow afternoon
+    - tomorrow
+    - day after tomorrow
+    - after 3 days
+
+- intent: booking_with_time_day_hours_minute
+  examples: |
+    - tomorrow at 10:12 am
+    - tomorrow after noon at 12:30 pm.
+    - need reservation tomorrow at 9pm.
+    - please reserve table for today evening 10am.
+    - today at noon 12:20 pm
+    - today evening at 9:00 pm
+    - today morning at 9:00 am
+    - tomorrow morning at 8:30 am
+    - tomorrow evening at 8:15 pm
+    - tomorrow afternoon 1:00 pm
+    - need a booking at tomorrow 1:20 pm
+    - day after tomorrow at 12:00 pm
+    - after 3 days evening at 8:00 pm
+    - required booking tomorrow morning at 10am
+
+- intent: booking_with_count_time_day_hours_minute
+  examples: |
+    - reservation for 10 member at tomorrow evening at 8:00pm
+    - please reserve table for today evening at 8:00pm.
+    - reservation for 10 member at tomorrow evening at 8:00pm.
+    - reserve table for 10 at tomorrow morning at 8:00am.
+    - need reservation for 10 tomorrow at 1:30pm.
+    - required booking for 2 people tomorrow morning at 10am.
+    - please book a table for 2 persons tomorrow morning at 9:40am
+    - can you book a table for 2 persons tomorrow morning at 9:40am
+    - need 2 members tomorrow at 12 pm
+
+- intent: booking_count
+  examples: |
+    - one
+    - two
+    - three
+    - four
+    - five
+    - six
+    - seven
+    - eight
+    - nine
+    - ten
+    - 1 member
+    - fifteen
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - twelve
+    - eleven
+    - twenty
+    - eighteen
+    - 13
+    - 12
+    - 21
+    - 25
+    - 10 persons 
+    - 12 people
+    - 3 members
+
+- intent: talkto_agent
+  examples: |
+    - i want to talk to agent
+    - please transfer call to agent
+    - please transfer call to customer representative
+    - transfer call 
+    - nedd to talk to an agent
+    - let me talk to an agent
+    - please transfer call
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
